@@ -21,3 +21,12 @@ While 3 is not, and would give us an infinite sequence:
 
 
 // Solution
+
+function isHappy(n) {
+  let arr = []
+  while (n !== 1 && arr.indexOf(n) === -1) {
+    arr.push(n);
+    n = n.toString().split('').map(x => Math.pow(Number(x), 2)).reduce((p, n) => p + n, 0);
+  }
+  return n === 1;
+}
