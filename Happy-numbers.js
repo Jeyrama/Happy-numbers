@@ -18,3 +18,6 @@ Examples:
 While 3 is not, and would give us an infinite sequence: 
   3, 9, 81, 65, 61, 37, 58, 89, 145, 42, 20, 4, 16, 37, 58, 89, 145, 42, 20, 4, 16, 37, ...
 */
+
+
+// Solution
