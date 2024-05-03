@@ -30,3 +30,5 @@ function isHappy(n) {
   }
   return n === 1;
 }
+
+// or
