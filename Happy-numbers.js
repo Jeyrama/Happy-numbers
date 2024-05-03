@@ -32,3 +32,24 @@ function isHappy(n) {
 }
 
 // or
+
+function isHappy(n, numbers) {
+  if (numbers === undefined) {
+    numbers = [];
+  }
+
+  if (numbers.indexOf(n) >= 0) {
+    return false
+  }
+  else {
+    numbers.push(n);
+  }
+
+  let r = 0;  
+  n.toString().split("").forEach((num) => {
+    if (num > 0) 
+      r += num*num;
+  });
+  
+  return r === 1 ? true : isHappy(r, numbers);
+}
